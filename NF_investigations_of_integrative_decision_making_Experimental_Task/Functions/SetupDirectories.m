@@ -24,7 +24,7 @@ PCuse = 1; % 1 - LAB,  2 - LAPTOP, 3 - BioSemi, 4 - LABNEW
 % - Main
 switch PCuse
     case 1        
-        direct.main = 'E:\';
+        direct.main = [pwd '\'];
     case 2     
         direct.main = 'C:\Users\uqarento\Documents\';
     case 3        
@@ -59,7 +59,7 @@ addpath( direct.hat )
 
 % -  Buffer directories
 direct.commonBCIfunctions = 'commonBCIfunctions\';
-direct.buffer = [direct.toolbox direct.commonBCIfunctions 'bufferDRP\'];
+direct.buffer = [direct.commonBCIfunctions 'bufferDRP\'];
 direct.realtime_hack = [ direct.toolbox 'realtime_hack_07-12-2016\' ];
 
 addpath( direct.buffer )

@@ -65,7 +65,7 @@ if SUB == 0
     Col2train = ceil(rand*2);
     Col2train = [1];
 else
-    load([direct.counterbalanceData 'ColourCounterBalance21-Mar-2018.mat'], 'ColourTrain')
+    load([direct.counterbalanceData 'ColourCounterBalance21-Mar-2018.mat'], 'ColourTrain') % Counterbalancing describing the order in which features are trained
     Col2train = ColourTrain(SUB);
 end
 

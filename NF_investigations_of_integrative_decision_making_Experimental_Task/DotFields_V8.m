@@ -25,17 +25,13 @@
 %
 % Written by Angela. I. Renton (March '18)
 
-%% TO DO
-
-% Add responses to DATA matrix
-% Triggers - improve
 
 %% Start
 input('Press Enter to Start Experiment')
 
 %% Directories
 
-SUB = 4;
+SUB = 0;
 
 direct.functions = 'Functions\'; addpath(direct.functions);
 SetupDirectories
